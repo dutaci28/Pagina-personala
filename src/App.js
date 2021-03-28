@@ -33,7 +33,12 @@ function App() {
   ]) 
 
   return (
+
+    
+
     <div className="row">
+
+      
 
       <div className="col-2 bg-dark">
         <Sidebar butoane={ butoaneSide }/>
