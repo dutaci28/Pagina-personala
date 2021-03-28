@@ -8,7 +8,7 @@ const Sidebar = (props) => {
     >
       {props.butoane.map((btn) => (
         <div>
-          <a key={btn.id} href={btn.tinta} className="btn m-3">
+          <a key={btn.id} href={btn.tinta} className="btn m-5 text-light">
             {btn.text}
           </a>
         </div>
