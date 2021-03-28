@@ -4,7 +4,7 @@ const SectiunePrincipala = (props) => {
       <div id="sectiune-1">
         <h1 className="d-flex justify-content-center">Educatie</h1>
         <p>
-          Oare merge bine?? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
+          Oare merge bine?? Cred ca da acum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis
           risus nibh. Donec nibh nisi, feugiat in augue vel, fringilla blandit
           eros. Nam et tellus eaaaaaaaaaaaaaaaaaros. Etiam ornare dolor ac massa
           facilisis tincidunt. Phasellus eros odio, consequat nec ex ac,
