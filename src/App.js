@@ -1,54 +1,35 @@
-import { useState } from "react";
-import Sidebar from './components/Sidebar';
-import SectiunePrincipala from './components/SectiunePrincipala';
+import { Typography, Grid } from "@material-ui/core";
+import Header from "./components/Header";
 
-function App() {
-
-  const [butoaneSide, setButoaneSide] = useState([
-    {
-      id: 1,
-      tinta: "#sectiune-1",
-      text: "Despre"
-    },
-    {
-      id:2,
-      tinta: "#sectiune-2",
-      text: "Experienta"
-    },
-    {
-      id:3,
-      tinta: "#sectiune-3",
-      text: "Proiecte"
-    },
-    {
-      id: 4,
-      tinta: "#sectiune-4",
-      text: "Educatie"
-    },
-    {
-      id: 5,
-      tinta: "#sectiune-5",
-      text: "Contact"
-    },
-  ]) 
-
+function App(props) {
   return (
+    <Grid container direction="column">
+      <Grid item>
+        <Header />
+      </Grid>
 
-    
-
-    <div className="row">
-
-      
-
-      <div className="col-2 bg-dark">
-        <Sidebar butoane={ butoaneSide }/>
-      </div>
-
-      <div className="col-10">
-        <SectiunePrincipala />
-      </div>
-      
-    </div>
+      <Grid item container>
+        <Grid item xs={0} sm={2} />
+        <Grid item xs={12} sm={8}>
+          <div>
+            <Typography variant="h5" align="center">
+              Salut! Eu sunt
+            </Typography>
+          </div>
+          <div>
+            <Typography variant="h1" align="center">
+              Catalin-Ionut Duta
+            </Typography>
+          </div>
+          <div>
+            <Typography variant="h3" align="center">
+              Student | Voluntar{" "}
+            </Typography>
+          </div>
+        </Grid>
+        <Grid item xs={0} sm={2} />
+      </Grid>
+    </Grid>
   );
 }
 
