@@ -1,36 +1,29 @@
-import { Typography, Grid } from "@material-ui/core";
-import Header from "./components/Header";
+import { Grid } from "@material-ui/core";
 import TemporaryDrawer from "./components/TemporaryDrawer";
+import PaginaTitlu from "./components/PaginaTitlu";
+import { StickyContainer, Sticky } from "react-sticky";
 
-function App(props) {
+function App() {
   return (
-    <Grid container direction="column">
-      <Grid item>
-        <TemporaryDrawer />
-      </Grid>
-
-      <Grid item container>
-        <Grid item xs={0} sm={2} />
-        <Grid item xs={12} sm={8}>
-          <div>
-            <Typography variant="h5" align="center">
-              Salut! Eu sunt
-            </Typography>
-          </div>
-          <div>
-            <Typography variant="h1" align="center">
-              Catalin-Ionut Duta
-            </Typography>
-          </div>
-          <div>
-            <Typography variant="h3" align="center">
-              Student | Voluntar{" "}
-            </Typography>
-          </div>
+    <StickyContainer>
+      <Grid container direction="column">
+        <Grid item>
+          <Sticky>
+            {({ style = "isSticky" }) => (
+              <div style={style}>
+                <TemporaryDrawer />
+              </div>
+            )}
+          </Sticky>
         </Grid>
-        <Grid item xs={0} sm={2} />
+
+        <Grid item container>
+          <Grid item xs={12}>
+            <PaginaTitlu />
+          </Grid>
+        </Grid>
       </Grid>
-    </Grid>
+    </StickyContainer>
   );
 }
 

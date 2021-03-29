@@ -1,22 +1,21 @@
-import React from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import React from "react";
+import clsx from "clsx";
+import { makeStyles } from "@material-ui/core/styles";
+import Drawer from "@material-ui/core/Drawer";
+import List from "@material-ui/core/List";
+import Divider from "@material-ui/core/Divider";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+
+import DehazeIcon from "@material-ui/icons/Dehaze";
+import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles({
   list: {
     width: 250,
   },
   fullList: {
-    width: 'auto',
+    width: "auto",
   },
 });
 
@@ -30,7 +29,10 @@ export default function TemporaryDrawer() {
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
       return;
     }
 
@@ -40,14 +42,14 @@ export default function TemporaryDrawer() {
   const list = (anchor) => (
     <div
       className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+        [classes.fullList]: anchor === "top" || anchor === "bottom",
       })}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Despre','Experienta','Educatie si Proiecte'].map((text, index) => (
+        {["Despre", "Experienta", "Educatie si Proiecte"].map((text, index) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
@@ -55,7 +57,7 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        {['Contact'].map((text, index) => (
+        {["Contact"].map((text, index) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
@@ -66,14 +68,19 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
-      {['left'].map((anchor) => (
-        <React.Fragment key="left">
-          <Button onClick={toggleDrawer("left", true)}>Deschide drawer</Button>
-          <Drawer anchor={"left"} open={state["left"]} onClose={toggleDrawer("left", false)}>
-            {list("left")}
-          </Drawer>
-        </React.Fragment>
-      ))}
+      <React.Fragment key="left">
+        <IconButton aria-label="delete" onClick={toggleDrawer("left", true)}>
+          <DehazeIcon />
+        </IconButton>
+
+        <Drawer
+          anchor={"left"}
+          open={state["left"]}
+          onClose={toggleDrawer("left", false)}
+        >
+          {list("left")}
+        </Drawer>
+      </React.Fragment>
     </div>
   );
 }
