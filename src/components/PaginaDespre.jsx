@@ -20,7 +20,7 @@ function PaginaDespre() {
     <Paper className={classes.pagTitlu} elevation={0}>
       <Grid container justify="center" style={{ gap: 50 }}>
         <Grid item xs={10} sm={4}>
-          <Typography bottomGutter variant="h3" align="center">
+          <Typography bottomGutter variant="h2" align="center">
             Cine sunt eu?
           </Typography>
 
@@ -33,7 +33,7 @@ function PaginaDespre() {
         </Grid>
 
         <Grid item xs={10} sm={4}>
-          <Typography bottomGutter variant="h3" align="center">
+          <Typography bottomGutter variant="h2" align="center">
             Hard Skills:
           </Typography>
 
@@ -72,7 +72,7 @@ function PaginaDespre() {
         </Grid>
 
         <Grid item xs={10} sm={4}>
-          <Typography bottomGutter variant="h3" align="center">
+          <Typography bottomGutter variant="h2" align="center">
             Contact:
           </Typography>
           <Typography variant="h5" align="center">
@@ -83,6 +83,31 @@ function PaginaDespre() {
           </Typography>
           <Typography variant="h5" align="center">
             GitHub: github.com/dutaci28
+          </Typography>
+        </Grid>
+
+        <Grid item xs={10} sm={4}>
+          <Typography bottomGutter variant="h2" align="center">
+            Certificări:
+          </Typography>
+
+          <Typography variant="h5" align="center">
+          • HTML5 App Dev Funamentals
+            <Typography color="textSecondary">
+              (Microsoft Technology Associate)
+            </Typography>
+          </Typography>
+          <Typography variant="h5" align="center">
+          • Database Design and Programming with SQL{" "}
+            <Typography color="textSecondary">
+              (Oracle Academy)
+            </Typography>
+          </Typography>
+          <Typography variant="h5" align="center">
+          • Data Structures and Algorithms, Master the Coding Interview{" "}
+            <Typography color="textSecondary">
+              (Udemy)
+            </Typography>
           </Typography>
         </Grid>
       </Grid>
