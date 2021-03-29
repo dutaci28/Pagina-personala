@@ -18,11 +18,8 @@ const useStyles = makeStyles({
 function PaginaTitlu() {
   const classes = useStyles();
   return (
-    <Paper
-      square
-      className={classes.pagTitlu}
-      elevation={0}
-    >
+    <Paper square className={classes.pagTitlu} elevation={0} >
+      
       <div>
         <Typography style={{ color: "white" }} variant="h1" align="center">
         <br></br>
