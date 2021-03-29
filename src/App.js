@@ -1,20 +1,23 @@
 import TemporaryDrawer from "./components/TemporaryDrawer";
 import PaginaTitlu from "./components/PaginaTitlu";
 import { StickyContainer, Sticky } from "react-sticky";
+import PaginaExperienta from "./components/PaginaExperienta";
 
 function App() {
   return (
     <StickyContainer>
       
+      <PaginaTitlu />
+
+      <PaginaExperienta />
+
       <Sticky>
         {({ style = "isSticky" }) => (
-          <div style={style}>
+          <span style={style}>
             <TemporaryDrawer />
-          </div>
+          </span>
         )}
       </Sticky>
-
-      <PaginaTitlu />
       
       
     </StickyContainer>

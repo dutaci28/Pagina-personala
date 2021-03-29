@@ -19,10 +19,21 @@ function PaginaTitlu() {
   const classes = useStyles();
   return (
     <Paper
+      square
       style={{ height: "100vh" }}
       className={classes.pagTitlu}
-      elevation={3}
+      elevation={0}
     >
+      <div>
+        <Typography style={{ color: "white" }} variant="h1" align="center">
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+        </Typography>
+      </div>
+
       <div>
         <Typography style={{ color: "white" }} variant="h5" align="center">
           Salut! Eu sunt
