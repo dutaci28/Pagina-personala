@@ -1,7 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import Paper from "@material-ui/core/Paper";
-
 import ImgSpate from "../img/ImgSpate.jpg";
 
 const useStyles = makeStyles({
@@ -12,6 +11,7 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    height: "110vh" 
   },
 });
 
@@ -20,15 +20,12 @@ function PaginaTitlu() {
   return (
     <Paper
       square
-      style={{ height: "100vh" }}
       className={classes.pagTitlu}
       elevation={0}
     >
       <div>
         <Typography style={{ color: "white" }} variant="h1" align="center">
-          <br></br>
-          <br></br>
-          <br></br>
+        <br></br>
           <br></br>
           <br></br>
         </Typography>
@@ -41,7 +38,7 @@ function PaginaTitlu() {
       </div>
       <div>
         <Typography style={{ color: "white" }} variant="h1" align="center">
-          Catalin-Ionut Duta
+        Cătălin-Ionuț Duță
         </Typography>
       </div>
       <div>

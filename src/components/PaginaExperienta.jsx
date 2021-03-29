@@ -10,28 +10,21 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    height: "100vh",
   },
 });
 
 function PaginaExperienta() {
   const classes = useStyles();
   return (
-    <Paper
-      square
-      style={{ height: "100vh" }}
-      className={classes.pagExperienta}
-      elevation={0}
-      >
-          
+    <Paper square className={classes.pagExperienta} elevation={0}>
+
       <div>
         <Typography variant="h3" align="center">
           Student | Voluntar{" "}
         </Typography>
       </div>
 
-      <div>
-        <Typography variant="h1" align="center"></Typography>
-      </div>
     </Paper>
   );
 }
