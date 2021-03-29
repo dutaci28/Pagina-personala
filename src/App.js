@@ -4,6 +4,7 @@ import { StickyContainer, Sticky } from "react-sticky";
 import PaginaExperienta from "./components/PaginaExperienta";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import PaginaDespre from "./components/PaginaDespre";
 
 function App() {
   const theme = createMuiTheme({
@@ -15,13 +16,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <StickyContainer>
-        <div id="#titlu">
-          <PaginaTitlu />
-        </div>
+        <PaginaTitlu />
+        
+        <PaginaDespre />
 
-        <div id="#experienta">
-          <PaginaExperienta />
-        </div>
         <Sticky>
           {({ style = "isSticky" }) => (
             <span style={style}>
@@ -30,9 +28,8 @@ function App() {
           )}
         </Sticky>
 
-        <div id="#altceva">
-          <PaginaTitlu />
-        </div>
+        <PaginaExperienta />
+
       </StickyContainer>
     </ThemeProvider>
   );

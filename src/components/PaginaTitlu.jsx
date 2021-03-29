@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 function PaginaTitlu() {
   const classes = useStyles();
   return (
-    <Paper square className={classes.pagTitlu} elevation={0} >
+    <Paper className={classes.pagTitlu} elevation={0} >
       
       <div>
         <Typography style={{ color: "white" }} variant="h1" align="center">
@@ -30,12 +30,12 @@ function PaginaTitlu() {
 
       <div>
         <Typography style={{ color: "white" }} variant="h5" align="center">
-          Salut! Eu sunt
+          Salut! Eu sunt 
         </Typography>
       </div>
       <div>
         <Typography style={{ color: "white" }} variant="h1" align="center">
-        Cătălin-Ionuț Duță
+          Cătălin-Ionuț <span style={{ color: "#E65F78" }}>Duță</span>
         </Typography>
       </div>
       <div>
