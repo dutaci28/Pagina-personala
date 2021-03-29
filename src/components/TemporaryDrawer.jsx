@@ -70,7 +70,7 @@ export default function TemporaryDrawer() {
     <div>
       <React.Fragment key="left">
         <IconButton aria-label="delete" onClick={toggleDrawer("left", true)}>
-          <DehazeIcon />
+          <DehazeIcon style={{ fontSize: 40 }} />
         </IconButton>
 
         <Drawer
