@@ -1,11 +1,12 @@
 import { Typography, Grid } from "@material-ui/core";
 import Header from "./components/Header";
+import TemporaryDrawer from "./components/TemporaryDrawer";
 
 function App(props) {
   return (
     <Grid container direction="column">
       <Grid item>
-        <Header />
+        <TemporaryDrawer />
       </Grid>
 
       <Grid item container>
