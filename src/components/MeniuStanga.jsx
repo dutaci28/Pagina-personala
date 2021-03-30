@@ -5,22 +5,15 @@ import Drawer from "@material-ui/core/Drawer";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import IconButton from "@material-ui/core/IconButton";
 import { Typography } from "@material-ui/core";
-
-import {
-  Link,
-  animateScroll as scroll,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
-  },
-  fullList: {
-    width: "auto",
+    width: "20vw",
   },
 });
 
-export default function TemporaryDrawer() {
+export default function MeniuStanga() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -42,15 +35,13 @@ export default function TemporaryDrawer() {
 
   const list = (anchor) => (
     <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
-      })}
-      role="presentation"
+      className={clsx(classes.list)}
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Typography variant="h5" align="center">
+      <Typography gutterBottom variant="h3" align="center">
         <Link
+          onClick={toggleDrawer(anchor, false)}
           activeClass="active"
           className="test1"
           to="test1"
@@ -58,12 +49,16 @@ export default function TemporaryDrawer() {
           smooth={true}
           duration={500}
         >
+          <br></br>
+          <br></br>
+          <br></br>
           Pagina de titlu
         </Link>
       </Typography>
 
-      <Typography variant="h5" align="center">
+      <Typography gutterBottom variant="h3" align="center">
         <Link
+          onClick={toggleDrawer(anchor, false)}
           activeClass="active"
           className="test2"
           to="test2"
@@ -71,12 +66,16 @@ export default function TemporaryDrawer() {
           smooth={true}
           duration={500}
         >
+          <br></br>
+          <br></br>
+          <br></br>
           Despre
         </Link>
       </Typography>
 
-      <Typography variant="h5" align="center">
+      <Typography gutterBottom variant="h3" align="center">
         <Link
+          onClick={toggleDrawer(anchor, false)}
           activeClass="active"
           className="test3"
           to="test3"
@@ -84,7 +83,10 @@ export default function TemporaryDrawer() {
           smooth={true}
           duration={500}
         >
-          Exprienta profesionala
+          <br></br>
+          <br></br>
+          <br></br>
+          Experiență Profesională
         </Link>
       </Typography>
     </div>

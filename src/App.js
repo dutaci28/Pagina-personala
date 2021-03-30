@@ -1,19 +1,10 @@
-import TemporaryDrawer from "./components/TemporaryDrawer";
+import TemporaryDrawer from "./components/MeniuStanga";
 import PaginaTitlu from "./components/PaginaTitlu";
 import { StickyContainer, Sticky } from "react-sticky";
 import PaginaExperienta from "./components/PaginaExperienta";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import PaginaDespre from "./components/PaginaDespre";
-
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Element } from "react-scroll";
 
 function App() {
   const theme = createMuiTheme({
@@ -44,7 +35,6 @@ function App() {
         <Element name="test3" className="element">
           <PaginaExperienta />
         </Element>
-        
       </StickyContainer>
     </ThemeProvider>
   );
