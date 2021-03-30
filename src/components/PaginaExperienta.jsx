@@ -45,7 +45,7 @@ function PaginaExperienta() {
           <Grid item xs={10} sm={3}>
             <Card elevation={3}>
               <CardMedia
-                image="https://i.postimg.cc/Y0HGLKK9/LogoMLSA.png"
+                image="https://i.postimg.cc/qvxxmwtT/LogoMLSA.jpg"
                 className={classes.media}
                 title="MLSA"
               />
@@ -70,7 +70,7 @@ function PaginaExperienta() {
           <Grid item xs={10} sm={3}>
             <Card elevation={3}>
               <CardMedia
-                image="https://i.postimg.cc/W3RtxL4n/LogoITC.png"
+                image="https://i.postimg.cc/Xvy7jHwM/LogoITC.jpg"
                 className={classes.media}
                 title="ITC"
               />
@@ -87,6 +87,8 @@ function PaginaExperienta() {
                   Flash-Mob-uri, Treasure hunt-uri etc. Astfel, am dezvoltat
                   skill-uri de comunicare, leadership și mai ales lucrul în
                   echipă.
+                  <br></br>
+                  <br></br>
                 </Typography>
               </CardContent>
             </Card>

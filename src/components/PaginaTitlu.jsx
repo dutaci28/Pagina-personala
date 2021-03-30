@@ -5,6 +5,9 @@ import ImgSpate from "../img/ImgSpate.jpg";
 import Grow from "@material-ui/core/Grow";
 import Typical from "react-typical";
 
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link } from "react-scroll";
+
 const useStyles = makeStyles({
   pagTitlu: {
     width: "max-width",
@@ -15,6 +18,10 @@ const useStyles = makeStyles({
     justifyContent: "center",
     height: "110vh",
   },
+  iconita: {
+    transform: "scale(3)",
+    color: "#E65F78"
+  }
 });
 
 function PaginaTitlu() {
@@ -46,16 +53,25 @@ function PaginaTitlu() {
         <div>
           <Typography style={{ color: "white" }} variant="h3" align="center">
             <Typical
-              steps={["Student", 3000, "Voluntar", 3000]}
+              steps={["Student", 3000, "Voluntar", 3000, "Programator", 3000]}
               loop={Infinity}
               wrapper="p"
             />
+            <Link
+              className="test2"
+              to="test2"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              <br></br>
+              <br></br>
+              <br></br>
+              <ExpandMoreIcon className={classes.iconita}/>
+            </Link>
           </Typography>
         </div>
       </Grow>
-      <div>
-        <Typography variant="h1" align="center"></Typography>
-      </div>
     </Paper>
   );
 }

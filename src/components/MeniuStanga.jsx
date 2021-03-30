@@ -11,6 +11,9 @@ const useStyles = makeStyles({
   list: {
     width: "20vw",
   },
+  textRosu: {
+    color: "#E65F78",
+  }
 });
 
 export default function MeniuStanga() {
@@ -52,7 +55,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          Pagina de titlu
+          <p className={ classes.textRosu }>Pagina de titlu</p>
         </Link>
       </Typography>
 
@@ -69,7 +72,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          Despre
+          <p className={ classes.textRosu }>Despre</p>
         </Link>
       </Typography>
 
@@ -86,7 +89,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          Experiență Profesională
+          <p className={ classes.textRosu }>Experiență Profesională</p>
         </Link>
       </Typography>
     </div>
