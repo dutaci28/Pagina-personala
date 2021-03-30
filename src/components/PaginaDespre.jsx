@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-function PaginaTest(props) {
+function PaginaTest() {
   const classes = useStyles();
 
   return (

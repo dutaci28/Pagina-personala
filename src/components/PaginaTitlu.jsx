@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import ImgSpate from "../img/ImgSpate.jpg";
 
 import Grow from "@material-ui/core/Grow";
+import Typical from "react-typical";
 
 const useStyles = makeStyles({
   pagTitlu: {
@@ -45,7 +46,11 @@ function PaginaTitlu() {
       <Grow in={true} timeout={4000}>
         <div>
           <Typography style={{ color: "white" }} variant="h3" align="center">
-            Student | Voluntar{" "}
+            <Typical
+              steps={["Student", 3000, "Voluntar", 3000]}
+              loop={Infinity}
+              wrapper="p"
+            />
           </Typography>
         </div>
       </Grow>
