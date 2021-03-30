@@ -2,9 +2,9 @@ import TemporaryDrawer from "./components/TemporaryDrawer";
 import PaginaTitlu from "./components/PaginaTitlu";
 import { StickyContainer, Sticky } from "react-sticky";
 import PaginaExperienta from "./components/PaginaExperienta";
-
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import PaginaDespre from "./components/PaginaDespre";
+
 
 function App() {
   const theme = createMuiTheme({
@@ -12,12 +12,12 @@ function App() {
       fontFamily: ["Open Sans", "sans-serif"].join(","),
     },
   });
-  
+
   return (
     <ThemeProvider theme={theme}>
       <StickyContainer>
         <PaginaTitlu />
-        
+
         <PaginaDespre />
 
         <Sticky>
