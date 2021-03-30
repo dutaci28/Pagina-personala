@@ -31,7 +31,7 @@ function PaginaTest() {
             <Typography variant="h5" align="center">
               Sunt o persoană deschisă, flexibilă, dornică de lucrul în echipă,
               sunt capabil să îmi exprim ideile fluent și să lucrez atât în
-              limba română, cât și în engleză. Sunt dornic de a învăța lucruri
+              limba română, cât și în engleză. Sunt deschis la a învăța lucruri
               noi. De asemenea, rețin informația rapid, lucrând eficient sub
               presiune.
             </Typography>

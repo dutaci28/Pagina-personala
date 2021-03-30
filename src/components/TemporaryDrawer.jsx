@@ -2,11 +2,14 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import Divider from "@material-ui/core/Divider";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import IconButton from "@material-ui/core/IconButton";
+import { Typography } from "@material-ui/core";
 
-
+import {
+  Link,
+  animateScroll as scroll,
+} from "react-scroll";
 
 const useStyles = makeStyles({
   list: {
@@ -46,14 +49,44 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div><a href="#titlu">Home</a></div>
-      <div><a href="#experienta">Experienta</a></div>
-      <div><a href="#titlu">Proiecte</a></div>
-      
-      <Divider />
-      
-      <div><a href="#titlu">Contact</a></div>
+      <Typography variant="h5" align="center">
+        <Link
+          activeClass="active"
+          className="test1"
+          to="test1"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Pagina de titlu
+        </Link>
+      </Typography>
 
+      <Typography variant="h5" align="center">
+        <Link
+          activeClass="active"
+          className="test2"
+          to="test2"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Despre
+        </Link>
+      </Typography>
+
+      <Typography variant="h5" align="center">
+        <Link
+          activeClass="active"
+          className="test3"
+          to="test3"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
+          Exprienta profesionala
+        </Link>
+      </Typography>
     </div>
   );
 

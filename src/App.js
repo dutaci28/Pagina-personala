@@ -5,6 +5,15 @@ import PaginaExperienta from "./components/PaginaExperienta";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import PaginaDespre from "./components/PaginaDespre";
 
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 function App() {
   const theme = createMuiTheme({
@@ -16,9 +25,13 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <StickyContainer>
-        <PaginaTitlu />
+        <Element name="test1" className="element">
+          <PaginaTitlu />
+        </Element>
 
-        <PaginaDespre />
+        <Element name="test2" className="element">
+          <PaginaDespre />
+        </Element>
 
         <Sticky>
           {({ style = "isSticky" }) => (
@@ -28,8 +41,10 @@ function App() {
           )}
         </Sticky>
 
-        <PaginaExperienta />
-
+        <Element name="test3" className="element">
+          <PaginaExperienta />
+        </Element>
+        
       </StickyContainer>
     </ThemeProvider>
   );

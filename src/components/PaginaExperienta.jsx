@@ -28,7 +28,7 @@ const useStyles = makeStyles({
 function PaginaExperienta() {
   const classes = useStyles();
   return (
-    <Paper className={classes.pagExperienta} elevation={0}>
+    <Paper square className={classes.pagExperienta} elevation={0}>
       <ScrollAnimation animateIn="bounceInLeft" animateOnce>
         <div>
           <Typography
