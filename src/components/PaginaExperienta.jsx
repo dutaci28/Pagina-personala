@@ -6,8 +6,8 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import ImgSpate2 from "../img/ImgSpate2.jpg";
-
 import ScrollAnimation from "react-animate-on-scroll";
+import ContainerGit from "./ContainerGit";
 
 const useStyles = makeStyles({
   pagExperienta: {
@@ -37,11 +37,11 @@ function PaginaExperienta() {
             align="center"
             gutterBottom
           >
-            Experiență Profesională
+            Proiecte / Experiență
           </Typography>
         </div>
 
-        <Grid container justify="center" style={{ gap: 50 }}>
+        <Grid container justify="center" style={{ gap: 80 }}>
           <Grid item xs={10} sm={3}>
             <Card elevation={3}>
               <CardMedia
@@ -66,6 +66,23 @@ function PaginaExperienta() {
               </CardContent>
             </Card>
           </Grid>
+
+          
+          <Grid item xs={10} sm={4}>
+            <Card elevation={3}>
+              
+              <CardContent>
+                <Typography>
+                  
+                  {/* <GitHubUser /> */}
+                  <ContainerGit />
+                  
+                </Typography>
+                </CardContent>
+                
+            </Card>
+          </Grid>
+
 
           <Grid item xs={10} sm={3}>
             <Card elevation={3}>

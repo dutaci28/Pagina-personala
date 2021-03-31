@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 
 const useStyles = makeStyles({
   list: {
-    width: "20vw",
+    width: "30vw",
   },
   textRosu: {
     color: "#E65F78",
@@ -72,7 +72,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          <p className={ classes.textRosu }>Despre</p>
+          <p className={ classes.textRosu }>Despre mine</p>
         </Link>
       </Typography>
 
@@ -89,7 +89,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          <p className={ classes.textRosu }>Experiență Profesională</p>
+          <p className={ classes.textRosu }>Proiecte / Experiență</p>
         </Link>
       </Typography>
     </div>

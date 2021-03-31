@@ -22,7 +22,7 @@ function PaginaTest() {
   return (
     <Paper className={classes.pagTitlu} elevation={0}>
       <ScrollAnimation animateIn="bounceInRight" animateOnce>
-        <Grid container justify="center" style={{ gap: 50 }}>
+        <Grid container justify="center" style={{ gap: 100 }}>
           <Grid item xs={10} sm={4}>
             <Typography bottomGutter variant="h2" align="center">
               Cine sunt eu?
@@ -57,37 +57,28 @@ function PaginaTest() {
 
               <Grid item xs={10} sm={5}>
                 <Typography variant="h5" align="center">
-                  HTML <LinearProgress variant="determinate" value="60" />
+                  JavaScript <LinearProgress variant="determinate" value="60" />
                 </Typography>
               </Grid>
 
               <Grid item xs={10} sm={5}>
                 <Typography bottomGutter variant="h5" align="center">
-                  CSS <LinearProgress variant="determinate" value="60" />
+                  Java <LinearProgress variant="determinate" value="50" />
                 </Typography>
               </Grid>
 
               <Grid item xs={10} sm={5}>
                 <Typography bottomGutter variant="h5" align="center">
-                  JavaScript <LinearProgress variant="determinate" value="50" />
+                  C# <LinearProgress variant="determinate" value="40" />
+                </Typography>
+              </Grid>
+
+              <Grid item xs={10} sm={5}>
+                <Typography bottomGutter variant="h5" align="center">
+                  Python <LinearProgress variant="determinate" value="40" />
                 </Typography>
               </Grid>
             </Grid>
-          </Grid>
-
-          <Grid item xs={10} sm={4}>
-            <Typography bottomGutter variant="h2" align="center">
-              Contact:
-            </Typography>
-            <Typography variant="h5" align="center">
-              Email: dutaci28@gmail.com
-            </Typography>
-            <Typography variant="h5" align="center">
-              LinkedIn: linkedin.com/in/catalin-ionut-duta/
-            </Typography>
-            <Typography variant="h5" align="center">
-              GitHub: github.com/dutaci28
-            </Typography>
           </Grid>
 
           <Grid item xs={10} sm={4}>
@@ -108,6 +99,20 @@ function PaginaTest() {
             <Typography variant="h5" align="center">
               • Data Structures and Algorithms, Master the Coding Interview{" "}
               <Typography color="textSecondary">(Udemy)</Typography>
+            </Typography>
+          </Grid>
+          <Grid item xs={10} sm={4}>
+            <Typography bottomGutter variant="h2" align="center">
+              Contact:
+            </Typography>
+            <Typography variant="h5" align="center">
+              Email: dutaci28@gmail.com
+            </Typography>
+            <Typography variant="h5" align="center">
+              LinkedIn: linkedin.com/in/catalin-ionut-duta/
+            </Typography>
+            <Typography variant="h5" align="center">
+              GitHub: github.com/dutaci28
             </Typography>
           </Grid>
         </Grid>
