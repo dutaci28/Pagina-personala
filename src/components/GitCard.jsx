@@ -9,12 +9,12 @@ import Link from '@material-ui/core/Link';
 
 export default function GitCard() {
   const [repos, setRepos] = useState([]);
-
+  const userName = 'dutaci28';
   useEffect(() => {
-    fetch("https://api.github.com/users/dutaci28/repos?sort=created")
+    fetch("https://api.github.com/users/" + userName + "/repos?sort=created")
       .then((response) => response.json())
       .then((data) => setRepos(data));
-  }, [repos]);
+  }, [userName]);
 
   const listItems = repos.map((repo) => (
     <Fragment>
