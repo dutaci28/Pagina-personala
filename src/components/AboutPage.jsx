@@ -3,11 +3,10 @@ import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
-
 import ScrollAnimation from "react-animate-on-scroll";
 
 const useStyles = makeStyles({
-  pagTitlu: {
+  aboutPage: {
     width: "max-width",
     display: "flex",
     flexDirection: "column",
@@ -16,11 +15,11 @@ const useStyles = makeStyles({
   },
 });
 
-function PaginaTest() {
+export default function AboutPage() {
   const classes = useStyles();
 
   return (
-    <Paper className={classes.pagTitlu} elevation={0}>
+    <Paper className={classes.aboutPage} elevation={0}>
       <ScrollAnimation animateIn="bounceInRight" animateOnce>
         <Grid container justify="center" style={{ gap: 100 }}>
           <Grid item xs={10} sm={4}>
@@ -120,5 +119,3 @@ function PaginaTest() {
     </Paper>
   );
 }
-
-export default PaginaTest;

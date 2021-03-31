@@ -7,10 +7,10 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import ImgSpate2 from "../img/ImgSpate2.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
-import ContainerGit from "./ContainerGit";
+import GitCard from "./GitCard";
 
 const useStyles = makeStyles({
-  pagExperienta: {
+  experiencePage: {
     width: "max-width",
     display: "flex",
     backgroundImage: `url(${ImgSpate2})`,
@@ -25,10 +25,10 @@ const useStyles = makeStyles({
   },
 });
 
-function PaginaExperienta() {
+export default function ExperiencePage() {
   const classes = useStyles();
   return (
-    <Paper square className={classes.pagExperienta} elevation={0}>
+    <Paper square className={classes.experiencePage} elevation={0}>
       <ScrollAnimation animateIn="bounceInLeft" animateOnce>
         <div>
           <Typography
@@ -74,8 +74,7 @@ function PaginaExperienta() {
               <CardContent>
                 <Typography>
                   
-                  {/* <GitHubUser /> */}
-                  <ContainerGit />
+                  <GitCard />
                   
                 </Typography>
                 </CardContent>
@@ -115,5 +114,3 @@ function PaginaExperienta() {
     </Paper>
   );
 }
-
-export default PaginaExperienta;

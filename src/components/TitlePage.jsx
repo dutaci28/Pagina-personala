@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from "react-scroll";
 
 const useStyles = makeStyles({
-  pagTitlu: {
+  titlePage: {
     width: "max-width",
     backgroundImage: `url(${ImgSpate})`,
     backgroundSize: "cover",
@@ -17,16 +17,16 @@ const useStyles = makeStyles({
     justifyContent: "center",
     height: "110vh",
   },
-  iconita: {
+  icon: {
     transform: "scale(3)",
     color: "#E65F78"
   }
 });
 
-function PaginaTitlu() {
+export default function TitlePage() {
   const classes = useStyles();
   return (
-    <Paper square className={classes.pagTitlu} elevation={0}>
+    <Paper square className={classes.titlePage} elevation={0}>
       <div>
         <Typography style={{ color: "white" }} variant="h1" align="center">
           <br></br>
@@ -67,7 +67,7 @@ function PaginaTitlu() {
             >
               <br></br>
               <br></br>
-              <ExpandMoreIcon className={classes.iconita}/>
+              <ExpandMoreIcon className={classes.icon}/>
             </Link>
           </Typography>
         </div>
@@ -75,5 +75,3 @@ function PaginaTitlu() {
     </Paper>
   );
 }
-
-export default PaginaTitlu;

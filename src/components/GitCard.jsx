@@ -7,14 +7,14 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import Link from '@material-ui/core/Link';
 
-export default function GitHubUser() {
+export default function GitCard() {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     fetch("https://api.github.com/users/dutaci28/repos?sort=created")
       .then((response) => response.json())
       .then((data) => setRepos(data));
-  });
+  }, [repos]);
 
   const listItems = repos.map((repo) => (
     <Fragment>
@@ -35,8 +35,8 @@ export default function GitHubUser() {
     </Fragment>
   ));
 
-  const iaPrimulItem = repos.filter((repo) => repo.name === "Pagina-personala");
-  const listeazaPrimaParte = iaPrimulItem.map((repo) => (
+  const firstItem = repos.filter((repo) => repo.name === "Pagina-personala");
+  const renderAvatar = firstItem.map((repo) => (
     <div align="center">
       <Avatar style={{ width: 100, height: 100 }} src={repo.owner.avatar_url} />
       <Typography variant="h2" align="center">
@@ -48,7 +48,7 @@ export default function GitHubUser() {
 
   return (
     <div>
-      {listeazaPrimaParte}
+      {renderAvatar}
       <List>{listItems}</List>
       <br></br>
       <br></br>

@@ -11,12 +11,12 @@ const useStyles = makeStyles({
   list: {
     width: "30vw",
   },
-  textRosu: {
+  redText: {
     color: "#E65F78",
   }
 });
 
-export default function MeniuStanga() {
+export default function LeftSideDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -55,7 +55,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          <p className={ classes.textRosu }>Pagina de titlu</p>
+          <p className={ classes.redText }>Pagina de titlu</p>
         </Link>
       </Typography>
 
@@ -72,7 +72,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          <p className={ classes.textRosu }>Despre mine</p>
+          <p className={ classes.redText }>Despre mine</p>
         </Link>
       </Typography>
 
@@ -89,7 +89,7 @@ export default function MeniuStanga() {
           <br></br>
           <br></br>
           <br></br>
-          <p className={ classes.textRosu }>Proiecte / Experiență</p>
+          <p className={ classes.redText }>Proiecte / Experiență</p>
         </Link>
       </Typography>
     </div>

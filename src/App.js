@@ -1,9 +1,9 @@
-import TemporaryDrawer from "./components/MeniuStanga";
-import PaginaTitlu from "./components/PaginaTitlu";
+import LeftSideDrawer from "./components/LeftSideDrawer";
+import TitlePage from "./components/TitlePage";
 import { StickyContainer, Sticky } from "react-sticky";
-import PaginaExperienta from "./components/PaginaExperienta";
+import ExperiencePage from "./components/ExperiencePage";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import PaginaDespre from "./components/PaginaDespre";
+import AboutPage from "./components/AboutPage";
 import { Element } from "react-scroll";
 
 function App() {
@@ -17,23 +17,23 @@ function App() {
     <ThemeProvider theme={theme}>
       <StickyContainer>
         <Element name="test1" className="element">
-          <PaginaTitlu />
+          <TitlePage />
         </Element>
 
         <Element name="test2" className="element">
-          <PaginaDespre />
+          <AboutPage />
         </Element>
 
         <Sticky>
           {({ style = "isSticky" }) => (
             <span style={style}>
-              <TemporaryDrawer />
+              <LeftSideDrawer />
             </span>
           )}
         </Sticky>
 
         <Element name="test3" className="element">
-          <PaginaExperienta />
+          <ExperiencePage />
         </Element>
       </StickyContainer>
     </ThemeProvider>
