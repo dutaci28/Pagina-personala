@@ -89,7 +89,7 @@ export default function LeftSideDrawer() {
           <br></br>
           <br></br>
           <br></br>
-          <p className={ classes.redText }>Proiecte / Experiență</p>
+          <p className={ classes.redText }>Proiecte / Voluntariat</p>
         </Link>
       </Typography>
     </div>

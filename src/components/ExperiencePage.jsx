@@ -37,7 +37,7 @@ export default function ExperiencePage() {
             align="center"
             gutterBottom
           >
-            Proiecte / Experiență
+            Proiecte / Voluntariat
           </Typography>
         </div>
 

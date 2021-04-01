@@ -5,11 +5,13 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
-import Link from '@material-ui/core/Link';
+import Link from "@material-ui/core/Link";
+
+
 
 export default function GitCard() {
   const [repos, setRepos] = useState([]);
-  const userName = 'dutaci28';
+  const userName = "dutaci28";
   useEffect(() => {
     fetch("https://api.github.com/users/" + userName + "/repos?sort=created")
       .then((response) => response.json())
@@ -24,9 +26,7 @@ export default function GitCard() {
           secondary={
             <React.Fragment>
               {repo.description}
-              <Link href={repo.html_url}>
-               --(Acceseaza)
-              </Link>
+              <Link href={repo.html_url}>--(Acceseaza)</Link>
             </React.Fragment>
           }
         />
@@ -42,7 +42,9 @@ export default function GitCard() {
       <Typography variant="h2" align="center">
         <div>{repo.owner.login}</div>
       </Typography>
-      <div>Cu ce mă ocup:</div>
+      <Typography color="textSecondary">
+        GitHub repos:
+      </Typography>
     </div>
   ));
 

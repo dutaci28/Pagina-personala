@@ -5,6 +5,10 @@ import Grid from "@material-ui/core/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import ScrollAnimation from "react-animate-on-scroll";
 
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import IconButton from "@material-ui/core/IconButton";
+
 const useStyles = makeStyles({
   aboutPage: {
     width: "max-width",
@@ -42,7 +46,7 @@ export default function AboutPage() {
 
             <Grid container justify="center" style={{ gap: 40 }}>
               <Grid item xs={10} sm={5}>
-                <Typography bottomGutter variant="h5" align="center">
+                <Typography bottomGutter variant="h5" align="center" >
                   C/C++
                   <LinearProgress variant="determinate" value="80" />
                 </Typography>
@@ -104,14 +108,21 @@ export default function AboutPage() {
             <Typography bottomGutter variant="h2" align="center">
               Contact:
             </Typography>
-            <Typography variant="h5" align="center">
-              Email: dutaci28@gmail.com
-            </Typography>
+            
             <Typography variant="h5" align="center">
               LinkedIn: linkedin.com/in/catalin-ionut-duta/
+              <IconButton variant="contained" href="https://www.linkedin.com/in/catalin-ionut-duta/">
+                <LinkedInIcon />
+              </IconButton>
             </Typography>
             <Typography variant="h5" align="center">
               GitHub: github.com/dutaci28
+              <IconButton variant="contained" href="https://github.com/dutaci28">
+                <GitHubIcon />
+              </IconButton>
+            </Typography>
+            <Typography variant="h5" align="center">
+              Email: dutaci28@gmail.com
             </Typography>
           </Grid>
         </Grid>
