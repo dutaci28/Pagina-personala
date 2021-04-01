@@ -4,7 +4,6 @@ import { Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import ScrollAnimation from "react-animate-on-scroll";
-
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import IconButton from "@material-ui/core/IconButton";
